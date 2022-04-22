@@ -6,6 +6,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
+using MusicShoolWPFApp.View;
+using MusicShoolWPFApp.ViewModels;
+
 namespace MusicShoolWPFApp
 {
     /// <summary>
@@ -13,5 +16,14 @@ namespace MusicShoolWPFApp
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            MainWindow window = new MainWindow();
+            MusicSchoolMarkViewModel musicSchoolMarkViewModel = new MusicSchoolMarkViewModel();
+
+            window.DataContext = musicSchoolMarkViewModel;
+            window.Show();
+            base.OnStartup(e);
+        }
     }
 }
