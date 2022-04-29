@@ -10,11 +10,11 @@ namespace MusicShoolWPFApp.ViewModels
 {
     class MusicSchoolMarkViewModel
     {
-        private MusicScoolMark musicScoolMark;
+        private MusicSchoolMark musicScoolMark;
 
         public MusicSchoolMarkViewModel()
         {
-            musicScoolMark = new MusicScoolMark();
+            musicScoolMark = new MusicSchoolMark();
         }
     }
 }

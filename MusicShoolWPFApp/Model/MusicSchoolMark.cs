@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace MusicShoolWPFApp.Model
 {
-    class MusicScoolMark
+    class MusicSchoolMark
     {
         private string nameOfStudent;
         private int instrumentMark;
         private int solfeggioMark;
 
-        public MusicScoolMark()
+        public MusicSchoolMark()
         {
             this.nameOfStudent = string.Empty; ;
             this.instrumentMark = 1;
             this.solfeggioMark = 1;
         }
 
-        public MusicScoolMark(string nameOfStudent, int instrumentMark, int solfeggioMark)
+        public MusicSchoolMark(string nameOfStudent, int instrumentMark, int solfeggioMark)
         {
             this.nameOfStudent = nameOfStudent;
             this.instrumentMark = instrumentMark;
